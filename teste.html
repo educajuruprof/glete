@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Eventos - Escola Onélia Menta</title>
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <style>
+    body {
+      background-color: #f8f9fa;
+    }
+    .event-card {
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+      border-radius: 1rem;
+    }
+    .event-card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+    }
+    .event-img {
+      border-top-left-radius: 1rem;
+      border-top-right-radius: 1rem;
+      height: 180px;
+      object-fit: cover;
+    }
+    .carousel-item img {
+      height: 400px;
+      object-fit: cover;
+      filter: brightness(0.8);
+    }
+    .carousel-caption {
+      background: rgba(0, 0, 0, 0.5);
+      border-radius: 1rem;
+      padding: 1rem;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Cabeçalho -->
+  <header class="bg-primary text-white text-center py-4 mb-3">
+    <h1>Eventos da Escola Onélia Menta</h1>
+    <p class="lead">Confira os próximos destaques!</p>
+  </header>
+
+  <!-- Carrossel de Eventos -->
+  <div id="carouselEventos" class="carousel slide mb-5" data-bs-ride="carousel">
+    <div class="carousel-inner">
+
+      <div class="carousel-item active">
+        <img src="https://picsum.photos/1200/400?random=10" class="d-block w-100" alt="Feira Cultural">
+        <div class="carousel-caption">
+          <h3>Feira Cultural 2025</h3>
+          <p>Um dia de cultura, arte e sabores típicos!</p>
+        </div>
+      </div>
+
+      <div class="carousel-item">
+        <img src="https://picsum.photos/1200/400?random=11" class="d-block w-100" alt="Semana da Ciência">
+        <div class="carousel-caption">
+          <h3>Semana da Ciência</h3>
+          <p>Experimentos, palestras e muita curiosidade!</p>
+        </div>
+      </div>
+
+      <div class="carousel-item">
+        <img src="https://picsum.photos/1200/400?random=12" class="d-block w-100" alt="Mostra de Artes">
+        <div class="carousel-caption">
+          <h3>Mostra de Artes</h3>
+          <p>Exposição das criações dos nossos alunos!</p>
+        </div>
+      </div>
+
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselEventos" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon"></span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselEventos" data-bs-slide="next">
+      <span class="carousel-control-next-icon"></span>
+    </button>
+  </div>
+
+  <!-- Cards de Eventos -->
+  <div class="container">
+    <div class="row g-4">
+
+      <!-- Evento 1 -->
+      <div class="col-md-4">
+        <div class="card event-card">
+          <img src="https://picsum.photos/400/200?random=1" class="event-img" alt="Evento 1">
+          <div class="card-body">
+            <h5 class="card-title">Feira Cultural</h5>
+            <p class="card-text">Apresentações, comidas típicas e muita diversão! Participe com sua turma.</p>
+            <p class="text-muted"><small>📅 25 de Outubro de 2025</small></p>
+            <a href="#" class="btn btn-primary w-100">Saiba mais</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Evento 2 -->
+      <div class="col-md-4">
+        <div class="card event-card">
+          <img src="https://picsum.photos/400/200?random=2" class="event-img" alt="Evento 2">
+          <div class="card-body">
+            <h5 class="card-title">Semana da Ciência</h5>
+            <p class="card-text">Descubra como a ciência transforma o mundo — palestras e oficinas incríveis!</p>
+            <p class="text-muted"><small>📅 30 de Outubro de 2025</small></p>
+            <a href="#" class="btn btn-primary w-100">Inscreva-se</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Evento 3 -->
+      <div class="col-md-4">
+        <div class="card event-card">
+          <img src="https://picsum.photos/400/200?random=3" class="event-img" alt="Evento 3">
+          <div class="card-body">
+            <h5 class="card-title">Mostra de Artes</h5>
+            <p class="card-text">Pinturas, esculturas e fotografias produzidas pelos alunos da escola!</p>
+            <p class="text-muted"><small>📅 10 de Novembro de 2025</small></p>
+            <a href="#" class="btn btn-primary w-100">Ver detalhes</a>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- Rodapé -->
+  <footer class="text-center mt-5 py-4 bg-light border-top">
+    <p class="mb-0">© 2025 Escola Onélia Menta - Todos os direitos reservados.</p>
+  </footer>
+
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

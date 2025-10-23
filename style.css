@@ -1,0 +1,65 @@
+.box-custom {
+  background-color: #f8f9fa;
+  border-radius: 20px;
+  padding: 20px;
+  box-shadow: 0 0 15px rgba(0,0,0,0.1);
+  overflow: hidden;
+}
+
+.titulo {
+  font-size: 1.8rem;
+  font-weight: bold;
+  color: #333;
+}
+
+.texto {
+  font-size: 1rem;
+  color: #555;
+  line-height: 1.6;
+}
+
+.img-container {
+  overflow: hidden;
+  border-radius: 15px;
+  display: inline-block;
+}
+
+.img-hover {
+  transition: transform 0.4s ease, filter 0.4s ease;
+}
+
+.img-hover:hover {
+  transform: scale(1.07);
+  filter: brightness(1.15);
+}
+
+/* Animações */
+@keyframes fadeInLeft {
+  from {
+    opacity: 0;
+    transform: translateX(-50px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes fadeInRight {
+  from {
+    opacity: 0;
+    transform: translateX(50px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+.fade-in-left {
+  animation: fadeInLeft 1s ease forwards;
+}
+
+.fade-in-right {
+  animation: fadeInRight 1s ease forwards;
+}

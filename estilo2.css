@@ -1,0 +1,24 @@
+.row-card {
+    background-color: #fff;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.row-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+}
+
+.image-hover {
+    width: 80%;        /* reduz a imagem */
+    max-width: 150px;   /* limite máximo */
+    transition: transform 0.3s;
+}
+
+.image-hover:hover {
+    transform: scale(1.05); /* leve zoom no hover da imagem */
+}
+
+.caption {
+    font-size: 0.9em;
+    color: #777;
+}
